@@ -98,12 +98,14 @@ namespace Tutorial
 			vertices.SetVertices(1, new float[]{0.0f, 0.0f,1.0f, 0.0f,1.0f, 1.0f,0.0f, 1.0f});
 		}
 		public Matrix4 CreateModelMatrix(){
-			Matrix4 centerMatrix = Matrix4.Translation(new Vector3(-centerX, -centerY, 0.0f));
-			Matrix4 transMatrix = Matrix4.Translation(new Vector3(positionX + centerX, positionY + centerY, 0.0f));
+			Matrix4 centerMatrix = Matrix4.Translation(new Vector3(-center.X, -center.Y, 0.0f));
+			Matrix4 transMatrix = Matrix4.Translation(new Vector3(position.X + center.X, position.Y + center.Y, 0.0f));
 			Matrix4 rotMatrix = Matrix4.RotationZ((float)(degree / 180.0f * FMath.PI));
-			Matrix4 scaleMatrix = Matrix4.Scale(new Vector3(scaleX, scaleY, 1.0f));
+			Matrix4 scaleMatrix = Matrix4.Scale(new Vector3(scale.X, scale.Y, 1.0f));
 			
 			return transMatrix * rotMatrix * scaleMatrix * centerMatrix;
 }
+	}
 }
+
 

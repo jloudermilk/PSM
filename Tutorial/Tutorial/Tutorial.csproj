@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="AppMain.cs" />
     <Compile Include="Sprite.cs" />
+    <Compile Include="Draw.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
