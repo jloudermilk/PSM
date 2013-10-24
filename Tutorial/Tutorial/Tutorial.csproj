@@ -39,6 +39,9 @@
     <Compile Include="AppMain.cs" />
     <Compile Include="Sprite.cs" />
     <Compile Include="Draw.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="Button.cs" />
+    <Compile Include="Widget.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
