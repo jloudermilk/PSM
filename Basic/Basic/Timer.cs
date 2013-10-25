@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using System.Diagnostics;
 
-namespace Tutorial
+namespace Basic.Framework
 {
 	public static class Timer
 	{

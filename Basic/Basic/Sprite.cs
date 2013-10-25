@@ -3,7 +3,7 @@ using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Graphics;
 using Sce.PlayStation.Core.Imaging;
 
-namespace Tutorial
+namespace Basic.Framework
 {
 	public class Sprite: IDisposable
 	{

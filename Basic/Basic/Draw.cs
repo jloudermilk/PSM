@@ -11,7 +11,7 @@ using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.Core.Input;
 
-namespace Tutorial
+namespace Basic.Framework
 {
 	public static class Draw
 	{
@@ -32,8 +32,8 @@ namespace Tutorial
 		{
 			graphics = graphicsContext;
 			
-			//textureShaderProgram = createSimpleTextureShader();
-			//colorShaderProgram = createSimpleColorShader();
+			textureShaderProgram = createSimpleTextureShader();
+			colorShaderProgram = createSimpleColorShader();
 			
 			projectionMatrix = Matrix4.Ortho (0, Width,
 			                                 0, Height,
@@ -250,7 +250,7 @@ namespace Tutorial
 		
 		private static ShaderProgram createSimpleTextureShader ()
 		{
-			string ResourceName = "Tutorial.shaders.Texture.cgx";
+			string ResourceName = "Basic.Framework.shaders.Texture.cgx";
 			
 			Assembly resourcesAssembly = Assembly.GetExecutingAssembly ();
 			if (resourcesAssembly.GetManifestResourceInfo (ResourceName) == null) {
@@ -274,7 +274,7 @@ namespace Tutorial
 
 		private static ShaderProgram createSimpleColorShader ()
 		{
-			string ResourceName = "Tutorial.shaders.Simple.cgx";
+			string ResourceName = "Basic.Framework.shaders.Simple.cgx";
             
 			Assembly resourceAssembly = Assembly.GetExecutingAssembly ();
 			if (resourceAssembly.GetManifestResourceInfo (ResourceName) == null) {

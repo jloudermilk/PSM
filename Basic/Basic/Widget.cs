@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Sce.PlayStation.Core.Input;
 
-namespace Tutorial
+namespace Basic.Framework
 {
 	public class Widget : IDisposable
 	{
@@ -41,7 +41,7 @@ namespace Tutorial
 		{
 			if(touchData.Status == TouchStatus.Move)
 			{
-				return InsideRect(Tutorial.Draw.TouchPixelX(touchData), Tutorial.Draw.TouchPixelY(touchData));
+				return InsideRect(Basic.Framework.Draw.TouchPixelX(touchData), Basic.Framework.Draw.TouchPixelY(touchData));
 			}
 			return false;
 		}
@@ -59,7 +59,7 @@ namespace Tutorial
 		}
 		public virtual void Draw()
 		{
-		 Tutorial.Draw.FillRect(buttonColor,rectX,rectY,rectW,rectH);
+		 Basic.Framework.Draw.FillRect(buttonColor,rectX,rectY,rectW,rectH);
 		}
 		
 	}

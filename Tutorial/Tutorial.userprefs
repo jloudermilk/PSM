@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tutorial\Sprite.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tutorial\BasicGameFramework.cs">
     <Files>
-      <File FileName="Tutorial\AppMain.cs" Line="79" Column="4" />
-      <File FileName="Tutorial\Sprite.cs" Line="76" Column="24" />
+      <File FileName="Tutorial\AppMain.cs" Line="16" Column="11" />
+      <File FileName="Tutorial\BasicGameFramework.cs" Line="22" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
